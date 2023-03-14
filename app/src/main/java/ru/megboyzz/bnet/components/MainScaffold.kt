@@ -17,6 +17,7 @@ import ru.megboyzz.bnet.SpacerWidth
 import ru.megboyzz.bnet.ui.theme.borderText
 import ru.megboyzz.bnet.ui.theme.main
 import ru.megboyzz.bnet.ui.theme.navbar
+import ru.megboyzz.bnet.ui.theme.search
 
 @Composable
 fun MainScaffold(
@@ -67,7 +68,7 @@ fun SearchTextField(
     OutlinedTextField(
         value = value,
         onValueChange = onValueChange,
-        modifier = Modifier.padding(5.dp),
+        modifier = Modifier.padding(3.dp),
         colors = TextFieldDefaults.outlinedTextFieldColors(
             textColor = Color.Black,
             backgroundColor = Color.White,
@@ -75,5 +76,6 @@ fun SearchTextField(
             cursorColor = Color.Black
         ),
         maxLines = 1,
+        textStyle = search
     )
 }

@@ -47,3 +47,9 @@ val H2 = TextStyle(
     color = grey
 )
 
+val search = TextStyle(
+    fontSize = 12.sp,
+    fontWeight = FontWeight.Normal,
+    color = Color.Black
+)
+

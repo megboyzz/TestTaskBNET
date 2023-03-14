@@ -92,10 +92,6 @@ fun AsyncImagePrev() {
             .fillMaxWidth(),
         contentScale = ContentScale.FillHeight,
         error = R.drawable.search.AsPainter(),
-        onError = {
-            val it1 = it
-            Log.i("AsyncImage", it.result.toString())
-        }
     )
 
 }
