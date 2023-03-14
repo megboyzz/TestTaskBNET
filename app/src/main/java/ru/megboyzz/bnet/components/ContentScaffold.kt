@@ -8,6 +8,7 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import ru.megboyzz.bnet.AsPainter
 import ru.megboyzz.bnet.R
+import ru.megboyzz.bnet.ui.theme.main
 import ru.megboyzz.bnet.ui.theme.navbar
 
 @Composable
@@ -25,7 +26,8 @@ fun ContentScaffold(
                         style = navbar
                     )
                 },
-                actions = {
+                backgroundColor = main,
+                navigationIcon = {
                     IconButton(onClick = onBackClick) {
                         Image(
                             painter = R.drawable.arrow_back.AsPainter(),

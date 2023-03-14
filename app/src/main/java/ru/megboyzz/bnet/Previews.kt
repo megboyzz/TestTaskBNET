@@ -18,6 +18,7 @@ import coil.compose.AsyncImage
 import coil.compose.AsyncImagePainter
 import ru.megboyzz.bnet.components.DrugCard
 import ru.megboyzz.bnet.components.MainScaffold
+import ru.megboyzz.bnet.screens.WhereBuyButton
 import ru.megboyzz.bnet.ui.theme.grey
 
 @Preview
@@ -97,4 +98,12 @@ fun AsyncImagePrev() {
         }
     )
 
+}
+
+@Preview
+@Composable
+fun WhereBuyButtonPrev() {
+    WhereBuyButton {
+
+    }
 }

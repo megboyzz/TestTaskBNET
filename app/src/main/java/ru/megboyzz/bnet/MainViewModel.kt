@@ -25,6 +25,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         updateDrugs()
     }
 
+
+    fun getActiveDrug(): Drug?{
+        return activeDrug.value
+    }
+
     fun updateDrugs(){
         viewModelScope.launch(Dispatchers.IO) {
             isLoading.emit(true)
